@@ -14,7 +14,11 @@ const withPWA = require("@ducanh2912/next-pwa").default({
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   experimental: {
-    optimizePackageImports: ["@mantine/core", "@mantine/hooks", "@tabler/icons-react"],
+    optimizePackageImports: [
+      "@mantine/core",
+      "@mantine/hooks",
+      "@tabler/icons-react",
+    ],
   },
   webpack: (config) => {
     // See https://webpack.js.org/configuration/resolve/#resolvealias
