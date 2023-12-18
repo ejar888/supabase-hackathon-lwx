@@ -1,0 +1,27 @@
+{
+  "name": "supabase-hackathon-lwx",
+  "version": "1.0.0",
+  "description": "Attendance app with face recognition features",
+  "main": "index.js",
+  "scripts": {
+    "supabase:start": "supabase start",
+    "supabase:status": "supabase status",
+    "supabase:function:serve": "supabase functions serve",
+    "supabase:stop": "supabase stop",
+    "supabase:stop:no-backup": "supabase stop --no-backup"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ejar888/supabase-hackathon-lwx.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ejar888/supabase-hackathon-lwx/issues"
+  },
+  "homepage": "https://github.com/ejar888/supabase-hackathon-lwx#readme",
+  "devDependencies": {
+    "supabase": "^1.123.4"
+  }
+}
