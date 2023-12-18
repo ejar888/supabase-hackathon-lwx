@@ -52,8 +52,10 @@ export function Navbar() {
       >
         {user && (
           <Center m="sm">
-            <IconUsers />
-            <Text ml="lg">Users</Text>
+            <Link href="/users" title="users">
+              <IconUsers />
+              <Text ml="lg">Users</Text>
+            </Link>
           </Center>
         )}
         <Center m="sm">
