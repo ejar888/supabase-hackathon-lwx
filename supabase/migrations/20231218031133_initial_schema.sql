@@ -1,8 +1,6 @@
 create extension if not exists "vector" with schema "extensions";
 
 
-create type "public"."organization_user_role" as enum ('admin', 'employee');
-
 create type "public"."timelog_type" as enum ('in', 'out');
 
 create table "public"."organization" (
