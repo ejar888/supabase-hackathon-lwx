@@ -6,12 +6,13 @@ import { IconLogout } from "@tabler/icons-react";
 
 import { useAuthContext } from "@/app/hooks/auth";
 
-export function LogoutButton({ withLabel }) {
+export function LogoutButton({ withLabel, onClick }) {
   const supabase = createClientComponentClient();
   const { user } = useAuthContext();
 
   const handleLogout = async () => {
     await supabase.auth.signOut();
+    onClick();
   };
 
   return (
@@ -21,11 +22,13 @@ export function LogoutButton({ withLabel }) {
       style={{ cursor: "pointer" }}
     >
       {user && (
+        <>
         <span title="logout">
           <IconLogout />
         </span>
+        { withLabel && (<Text>Logout</Text>) }
+        </>
       )}
-      {withLabel && <Text>Logout</Text>}
     </Group>
   );
 }

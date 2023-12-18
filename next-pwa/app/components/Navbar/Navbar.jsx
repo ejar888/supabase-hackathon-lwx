@@ -37,31 +37,32 @@ export function Navbar() {
             <LogoutButton />
           </Group>
 
-          <Group display={{ sm: "none" }}>
+          {user && (<Group display={{ sm: "none" }}>
             <Burger opened={drawerOpened} onClick={toggleDrawer} />
-          </Group>
+          </Group>)}
         </Group>
       </header>
 
-      <Drawer
-        opened={drawerOpened}
-        onClose={closeDrawer}
-        zIndex={1000000}
-        position="right"
-        display={{ sm: "none" }}
-      >
-        {user && (
-          <Center m="sm">
-            <Link href="/users" title="users">
+      {user && (
+        <Drawer
+          opened={drawerOpened}
+          onClose={closeDrawer}
+          zIndex={1000000}
+          position="right"
+          display={{ sm: "none" }}
+        >
+          <Link href="/users" title="users" onClick={closeDrawer}>
+            <Center m="sm">
               <IconUsers />
               <Text ml="lg">Users</Text>
-            </Link>
+            </Center>
+          </Link>
+
+          <Center m="sm">
+            <LogoutButton withLabel onClick={closeDrawer}/>
           </Center>
-        )}
-        <Center m="sm">
-          <LogoutButton withLabel />
-        </Center>
-      </Drawer>
+        </Drawer>
+      )}
     </>
   );
 }
