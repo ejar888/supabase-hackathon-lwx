@@ -1,0 +1,43 @@
+{
+  "name": "next-pwa",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "lint:fix": "prettier --write . && next lint --fix"
+  },
+  "dependencies": {
+    "@builder.io/partytown": "^0.8.1",
+    "@ducanh2912/next-pwa": "^10.0.0",
+    "@mantine/core": "^7.3.1",
+    "@mantine/form": "^7.3.2",
+    "@mantine/hooks": "^7.3.1",
+    "@mantine/notifications": "^7.3.2",
+    "@mediapipe/face_mesh": "^0.4.1633559619",
+    "@supabase/auth-helpers-nextjs": "^0.8.7",
+    "@supabase/supabase-js": "^2.39.0",
+    "@tabler/icons-react": "^2.44.0",
+    "@tensorflow-models/face-landmarks-detection": "^1.0.5",
+    "@tensorflow/tfjs": "^4.15.0",
+    "@tensorflow/tfjs-backend-webgl": "^4.15.0",
+    "@xenova/transformers": "^2.11.0",
+    "base64-arraybuffer": "^1.0.2",
+    "next": "14.0.4",
+    "normalize.css": "^8.0.1",
+    "react": "^18",
+    "react-dom": "^18",
+    "react-webcam": "^7.2.0"
+  },
+  "devDependencies": {
+    "eslint": "^8",
+    "eslint-config-next": "14.0.4",
+    "eslint-config-prettier": "^9.1.0",
+    "postcss": "^8.4.32",
+    "postcss-preset-mantine": "^1.11.1",
+    "postcss-simple-vars": "^7.0.1",
+    "prettier": "^3.1.1"
+  }
+}
