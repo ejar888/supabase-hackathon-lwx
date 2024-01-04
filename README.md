@@ -9,8 +9,6 @@
   <p align="center">
     Attendance app with face recognition features.
     <br />
-    <a href="https://supabase-hackathon-lwx-attendance-app.vercel.app/"><strong>View Demo</strong></a>
-    <br />
   </p>
 </div>
 
